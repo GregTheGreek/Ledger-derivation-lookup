@@ -18,6 +18,7 @@ const getPaths = async (path, depth) => {
   const signer = new LedgerSigner(HIDTransport, provider);
 
   for (let j = 0; j < paths.length; j++) {
+    console.log("\n")
     console.log(`${paths[j].name}: ${paths[j].path}`);
     console.log("---------------------");
     for (let i = 0; i < 10; i++) {
@@ -26,7 +27,6 @@ const getPaths = async (path, depth) => {
       const address = await account.getAddress();
       const balance = ethers.formatEther(await provider.getBalance(address));
       console.log(`${i}: ${address} (${balance} ether)`);
-      console.log("\n")
     }
   }
 })();
