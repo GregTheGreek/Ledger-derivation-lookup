@@ -26,7 +26,7 @@ const getPaths = async (path, depth) => {
       const address = await account.getAddress();
       const balance = ethers.formatEther(await provider.getBalance(address));
       console.log(`${i}: ${address} (${balance} ether)`);
+      console.log("\n")
     }
-    console.log("\n")
   }
 })();
