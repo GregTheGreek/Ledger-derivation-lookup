@@ -1,0 +1,21 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@ethers-ext/signer-ledger": "^6.0.0-beta.1",
+    "@ethersproject/hardware-wallets": "^5.7.0",
+    "@ledgerhq/hw-transport-node-hid": "^6.27.21",
+    "ethers": "^6.7.1",
+    "node-hid": "^2.1.2",
+    "usb": "^2.10.0"
+  },
+  "name": "@gregthegreek/ledger-lookup",
+  "version": "0.0.1",
+  "description": "Look up address against common ethereum derivation paths",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gregory Markou",
+  "license": "Apache-2.0"
+}
