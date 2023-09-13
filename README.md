@@ -35,7 +35,7 @@ Ledger Live: m/44'/60'/0'/i/0/0
 ## Run
 1. Connect your ledger device
 2. Open the ethereum app
-3. Run `node index.js`
+3. Run `node index.js [url_to_rpc_node]`
 
 ## Troubleshooting
 ### Seeing strange "connection" errors
